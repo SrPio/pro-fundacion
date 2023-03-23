@@ -1,0 +1,50 @@
+.logos {
+  position: relative;
+
+  max-width: 110rem;
+  margin: 0 auto;
+  margin-top: 10rem;
+
+  z-index: 1;
+
+  img {
+    height: 4rem;
+  }
+
+  h2 {
+    margin-top: 2rem;
+  }
+}
+
+.desarrolladoras {
+  @include for-size('tablet-landscape-up') {
+    margin-top: -4%;
+  }
+
+  @include for-size('medium-desktop-up') {
+    margin-top: -2%;
+  }
+
+}
+
+.nuestroaAliados {
+  &__content {
+    img {
+      min-width: 30rem;
+    }
+  }
+}
+
+.logos__hero {
+  position: relative;
+
+  max-width: 110rem;
+  margin: 3rem auto;
+
+  z-index: 1;
+
+  img:nth-child(n) {
+    width: 134px;
+    height: 60px;
+  }
+}

@@ -1,0 +1,32 @@
+@import "abstracts/mixins";
+@import "base/variables";
+@import "base/reset";
+@import "base/typography";
+@import "base/utilities";
+
+@import "components/nav";
+@import "components/nav2";
+@import "components/btn";
+@import 'components/title';
+@import "components/carusel";
+@import "components/map";
+@import "components/industrias";
+@import "components/btnHelp";
+@import "components/btnFloat";
+
+@import "layout/flexContainer";
+@import "layout/gridSystem";
+@import "layout/footer";
+
+@import "pages/home";
+@import "pages/stackColombia";
+@import "pages/postulaciones";
+@import "pages/coomeva";
+@import "pages/davivienda";
+@import "pages/asodamas";
+@import "pages/stackHonduras";
+@import "pages/colsubsidio";
+@import "pages/colsubsidio2";
+@import "pages/fgs";
+@import "pages/usaid";
+@import "pages/codingDojo";

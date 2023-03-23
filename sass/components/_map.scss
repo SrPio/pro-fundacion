@@ -1,0 +1,161 @@
+.map {
+  position: relative;
+
+  max-width: 120rem;
+  margin-right: auto;
+  margin-left: auto;
+
+  &__square {
+    position: absolute;
+    right: -9rem;
+    bottom: 0;
+    z-index: -1;
+    height: 20rem;
+    width: 20rem;
+  }
+
+  &__img {
+    width: 100%;
+  }
+
+  &__location {
+    @include for-size('tablet-portrait-up') {
+      position: absolute;
+    }
+
+    &--1 {
+      top: 26.2%;
+      left: 48%;
+    }
+
+    &--2 {
+      top: 17%;
+      left: 49.5%;
+    }
+
+    &--3 {
+      top: 34%;
+      left: 14%;
+    }
+
+    &--4 {
+      top: 31%;
+      left: 25%;
+    }
+
+    &--5 {
+      bottom: 33%;
+      left: 32%;
+
+      height: 50px;
+    }
+
+    &--6 {
+      top: 19%;
+      right: 54%;
+    }
+
+    &--7 {
+      bottom: 23%;
+      left: 29%;
+
+      img {
+        width: 70px;
+      }
+    }
+
+    &--8 {
+      bottom: 40%;
+      left: 23%;
+    }
+
+    &--9 {
+      left: 17%;
+      bottom: 32%;
+    }
+
+    &--10 {
+      left: 13%;
+      bottom: 40.5%;
+    }
+  }
+
+  &__box {
+    background: $cWhite;
+
+    border-radius: 1rem;
+
+    position: relative;
+
+    @include for-size('tablet-portrait-up') {
+      width: 15rem;
+      height: 6.1rem;
+    }
+
+    --logo: scale(1);
+    --text: scale(0);
+
+    &:hover {
+      --logo: scale(0);
+      --text: scale(1);
+    }
+  }
+
+  .map__box__didi {
+    background: $cWhite;
+
+    border-radius: 1rem;
+
+    position: relative;
+
+    @include for-size('tablet-portrait-up') {
+      width: 11rem;
+      height: 6.1rem;
+    }
+
+    --logoM: scale(1);
+    --textM: scale(0);
+
+    &:hover {
+      --logoM: scale(0);
+      --textM: scale(1);
+    }
+  }
+
+  %transition {
+    transition: transform 1s;
+  }
+
+}
+
+.map__logo {
+  object-fit: scale-down;
+
+  transform: var(--logo);
+
+  @extend %transition;
+}
+
+.map__text {
+  position: absolute;
+
+  transform: var(--text);
+
+  @extend %transition;
+}
+
+.map__logoM {
+  object-fit: scale-down;
+
+  transform: var(--logoM);
+
+  @extend %transition;
+}
+
+.map__textM {
+  position: absolute;
+
+  transform: var(--textM);
+
+  @extend %transition;
+}

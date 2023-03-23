@@ -1,0 +1,597 @@
+.postulation-page {
+  width: 100%;
+  padding: 100px 7.5% 50px;
+
+
+  background-image: url('https://res.cloudinary.com/protalento/image/upload/v1678729963/Website/PROtalento/Generales/postulacion-mobile-bg_b7p97l.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+
+  .container-postulation {
+    width: 100%;
+
+    >p {
+
+      font-family: 'Nunito';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 130%;
+
+      margin-top: 17px;
+
+
+      color: #33345C;
+
+      @media screen and (min-width: 1024px) {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 130%;
+
+        margin-top: 29px;
+      }
+
+
+      span {
+        font-style: italic;
+      }
+
+      a {
+        color: #F1AF4D;
+      }
+    }
+
+    >h2 {
+      font-family: 'Nunito';
+      font-style: normal;
+      font-weight: 800;
+      font-size: 20px;
+      line-height: 27px;
+      text-align: left;
+      letter-spacing: -0.04em;
+
+      background: linear-gradient(91.03deg, #524FBD 13.04%, #4367CD 74.92%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-fill-color: transparent;
+
+
+      margin-top: 33px;
+
+
+      @media screen and (min-width: 1024px) {
+        font-family: 'Nunito';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 40px;
+        line-height: 55px;
+
+        letter-spacing: -0.04em;
+
+        background: linear-gradient(91.03deg, #524FBD 13.04%, #4367CD 74.92%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+
+        margin-top: 65px;
+
+      }
+    }
+
+    .cta-card {
+      display: flex;
+      justify-content: left;
+      align-items: center;
+
+      width: 120%;
+
+      margin-left: -18%;
+      margin-bottom: 44px;
+      padding: 17px 9px;
+
+      box-shadow: 0px 4px 8px -4px rgba(22, 34, 51, 0.08), 0px 16px 24px rgba(22, 34, 51, 0.08);
+      border-radius: 8px;
+
+      p {
+        margin-left: 10%;
+
+        font-family: "Nunito", sans-serif;
+        font-weight: 500;
+        font-size: 1.6rem;
+        line-height: 36px;
+        color: #003399;
+        text-align: left;
+
+        span {
+          font-size: 1.2rem;
+        }
+      }
+    }
+
+    .accordeon-content--forms {
+      /* padding: 0; */
+    }
+
+    .external-form {
+      width: 100%;
+
+
+      margin-bottom: 50px;
+      padding: 5%;
+
+      padding: 0%;
+
+      /* box-shadow: 0px 4px 8px -4px rgba(22, 34, 51, 0.08), 0px 16px 24px rgba(22, 34, 51, 0.08); */
+      border-radius: 8px;
+
+      div {
+        min-width: 320px;
+      }
+
+      .postulacion--calendar {
+        height: 1000px;
+        width: 100%;
+
+        iframe {
+          /* max-width: 250px; */
+          height: 100% !important;
+          width: 80% !important;
+
+          @media screen and (min-width: 400px) {
+            width: 100% !important;
+          }
+        }
+      }
+
+      &.calendar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+}
+
+.steps-carousel {
+  /* height: 397px; */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+
+
+  .slick-track {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+
+
+
+  }
+
+}
+
+.steps-carousel {
+  .slick-dots {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 6rem 0;
+
+    list-style-type: none;
+
+    li {
+      margin: 0 0.25rem;
+    }
+
+    button {
+      display: block;
+      width: 2rem;
+      height: 1rem;
+      padding: 0;
+      border: none;
+      background-color: #E4E4E4;
+      text-indent: -9999px;
+      border-radius: 20px;
+      -webkit-border-radius: 20px;
+      -moz-border-radius: 20px;
+      -ms-border-radius: 20px;
+      -o-border-radius: 20px;
+    }
+
+    li.slick-active button {
+      background-color: $cPrimaryDynamic;
+      width: 4rem;
+      border-radius: 20px;
+      -webkit-border-radius: 20px;
+      -moz-border-radius: 20px;
+      -ms-border-radius: 20px;
+      -o-border-radius: 20px;
+    }
+
+  }
+}
+
+
+.postulation__card--container {
+
+  display: block;
+  margin-left: 18%;
+  margin-right: 18%;
+  /*  width: 100%;
+  display: flex;
+  justify-content: center; */
+  /*   max-width: 320px; */
+
+  @media screen and (min-width: 768px) {
+    margin-left: 8%;
+    margin-right: 8%;
+  }
+
+  @media screen and (min-width: 1024px) {
+    margin-left: 18%;
+    margin-right: 18%;
+  }
+
+
+
+  .postulation__card {
+    width: 200px;
+    height: 452px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 4px 15px 10px rgba(32, 33, 47, 0.04);
+    border-radius: 8px;
+
+    padding: 20px;
+
+    .postulation__badge {
+      /* position: absolute; */
+      width: 64px;
+      height: 16px;
+      /* left: 572px;
+      top: 429px; */
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #e7ddff;
+      /* opacity: 0.3; */
+      border-radius: 8px;
+      color: #3D1891;
+
+    }
+
+    img {
+      height: 138px;
+    }
+
+    &--time--container {
+      display: flex;
+
+
+
+      img {
+        width: 28px;
+        height: 28px;
+      }
+
+      p {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 24px;
+        margin-left: 8px;
+
+        color: #33345C;
+
+      }
+
+    }
+
+
+
+    h2 {
+      font-family: 'Nunito';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 22px;
+      line-height: 36px;
+
+
+      color: #003399;
+
+    }
+
+    .postulation__card--paid__paragraph {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+
+      text-align: center;
+
+      margin-top: 19px;
+      color: #33345C;
+    }
+
+    .postulation__card--header {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      p {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 28px;
+        /* or 233% */
+
+        display: flex;
+        align-items: center;
+
+        /* Texto - Body */
+
+        color: #33345C;
+      }
+
+      span {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 28px;
+        line-height: 20px;
+
+        color: #385499;
+
+      }
+    }
+  }
+
+
+  /* .card--disabled {
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+  } */
+}
+
+
+.calendar__acordion-item--disabled {
+  cursor: default;
+  opacity: 0.5;
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+}
+
+.accordeon-item--forms {
+
+  box-shadow: none !important;
+  background: #FFFFFF;
+  border: 1px solid #D1D5DB;
+  border-radius: 12px;
+
+  margin: 20px !important;
+
+  position: relative !important;
+  overflow: visible !important;
+
+  .item__time {
+    display: flex;
+    position: absolute;
+    top: -25px;
+    left: -1px;
+    z-index: 1 !important;
+
+
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 24px;
+
+    color: #4267CD;
+
+    @media screen and (min-width: 1024px) {
+      font-weight: 700;
+      font-size: 12px;
+      line-height: 24px;
+    }
+  }
+
+
+  .steps--container {
+    margin: 12px 0;
+
+    display: flex;
+    align-items: center;
+
+    span {
+      font-family: 'Nunito';
+      font-style: normal;
+      font-weight: 800;
+      font-size: 16px;
+      line-height: 24px;
+
+      text-align: center;
+
+
+      color: #4267CD;
+
+      @media screen and (min-width: 1024px) {
+        font-size: 22px;
+        line-height: 24px;
+        font-weight: 800;
+      }
+
+    }
+
+    p {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 0px;
+      display: flex;
+      text-align: center;
+
+
+      color: #33345C;
+    }
+
+
+
+  }
+
+  .postulation__options--title {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+
+    color: #4267CD !important;
+
+
+    margin-left: 7px;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    @media screen and (min-width: 1024px) {
+      font-size: 22px;
+      line-height: 24px;
+    }
+
+  }
+
+  .postulation__paragraph {
+    span {
+      font-size: 16px;
+      color: $cBlueDark;
+    }
+
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    margin: 0 1rem;
+
+    color: $cBlueDarker;
+  }
+
+  .postulation_tip {
+    font-size: 16px;
+    max-width: 420px;
+    line-height: 24px;
+    color: #33345C;
+    margin: 5rem auto;
+    padding: 3rem;
+    background: #FFE6D2;
+    border-radius: 8px;
+
+    span {
+      font-weight: 700;
+
+    }
+  }
+
+  .msg-finish-assessment {
+
+    font-size: 2rem;
+    font-weight: 300;
+
+    display: none;
+  }
+}
+
+
+
+
+/* acordeon form */
+/* .accordeon-content {
+  display: none;
+} */
+
+/* .postulationForm {
+  display: none;
+} */
+
+/* END acordeon form */
+
+
+
+
+@media screen and (min-width: 768px) {
+  .postulation-page {
+    .container-postulation {
+
+
+      .cta-card {
+        p {
+          font-size: 2.5rem;
+
+          span {
+            font-size: 1.8rem;
+          }
+        }
+      }
+
+      .external-form {
+        padding: 5% 10%;
+
+        div {
+          min-width: unset;
+        }
+
+        .postulation__paragraph {
+          font-family: 'Nunito';
+          font-style: normal;
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 24px;
+
+          color: $cBlueDarker;
+
+
+          span {
+            color: #385499;
+          }
+        }
+      }
+    }
+  }
+
+}
+
+@media screen and (min-width: 1024px) {
+  .postulation-page {
+    .container-postulation {
+      .cta-card {
+        p {
+          font-size: 3.2rem;
+
+          span {
+            font-size: 2.4rem;
+          }
+        }
+      }
+    }
+
+    /* .postulation__options--title {
+
+      font-size: 28px;
+      line-height: 36px;
+
+      display: flex;
+      align-items: center;
+      text-align: center;
+
+      color: #003399;
+
+    } */
+  }
+}
