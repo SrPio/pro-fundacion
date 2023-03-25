@@ -87,10 +87,13 @@
           iniciativas verdes y educación.
         </p>
       </div>
-      <img
-        src="https://res.cloudinary.com/protalento/image/upload/v1679680035/Website/PROtalento/Convocatorias/fundacion/Group_2524_uaepfx.svg"
-        alt="gráfico talento latam"
-      />
+      <div>
+        <h2 class="subtitulo--main">Modelo de Impacto con PROtalento</h2>
+        <img
+          src="https://res.cloudinary.com/protalento/image/upload/v1679680035/Website/PROtalento/Convocatorias/fundacion/Group_2524_uaepfx.svg"
+          alt="gráfico talento latam"
+        />
+      </div>
     </main>
     <section class="fundacion--impacto">
       <h2>Nuestro impacto</h2>
@@ -284,7 +287,11 @@
             estudiantiles y sindicales, rectores de universidades y colegios
             públicos y privados.
           </p>
-          <button>Leer más</button>
+          <a
+            href="https://www.elespectador.com/educacion/cuales-son-las-prioridades-en-la-educacion-colombiana-esto-dicen-algunos-expertos/"
+            target="_blank"
+            >Leer más</a
+          >
         </div>
         <div class="card">
           <img
@@ -306,7 +313,11 @@
             unas 100 personas y conformado en su mayoría jóvenes
             universitarios...
           </p>
-          <button>Leer más</button>
+          <a
+            href="https://www.eltiempo.com/archivo/documento/CMS-16692696"
+            target="_blank"
+            >Leer más</a
+          >
         </div>
       </div>
     </section>
@@ -380,8 +391,8 @@
               />
               <a
                 class="text-decoration-none c-white"
-                href="mailto:hola@protalento.com"
-                >hola@protalento.com</a
+                href="mailto:direccion@talentolatam.org"
+                >direccion@talentolatam.org</a
               >
             </li>
           </ul>
@@ -402,48 +413,74 @@
     <script src="slick/slick.min.js"></script>
 
     <script>
-      $(".camino--carusel").slick({
-        slidesToShow: 2,
-        slidesToScroll: 1,
-        autoplay: false,
-        autoplaySpeed: 2000,
-        arrows: false,
-        dots: false,
-        infinite: false,
-        pauseOnHover: false,
-        responsive: [
-          {
-            breakpoint: 1024,
-            settings: {
-              slidesToShow: 2,
-              slidesToScroll: 1,
+      // Función para destruir el carousel
+      function destroySlick() {
+        $(".camino--carusel").slick("unslick");
+      }
+
+      // Función para montar el carousel
+      function initSlick() {
+        $(".camino--carusel").slick({
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          autoplay: false,
+          autoplaySpeed: 2000,
+          arrows: false,
+          dots: false,
+          infinite: false,
+          pauseOnHover: false,
+          responsive: [
+            {
+              breakpoint: 1024,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+              },
             },
-          },
-          {
-            breakpoint: 768,
-            settings: {
-              slidesToShow: 2,
-              slidesToScroll: 1,
-              centerMode: true,
+            {
+              breakpoint: 768,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                centerMode: true,
+              },
             },
-          },
-          {
-            breakpoint: 600,
-            settings: {
-              slidesToShow: 1.5,
-              slidesToScroll: 1,
-              centerMode: true,
+            {
+              breakpoint: 600,
+              settings: {
+                slidesToShow: 1.5,
+                slidesToScroll: 1,
+                centerMode: true,
+              },
             },
-          },
-          {
-            breakpoint: 500,
-            settings: {
-              slidesToShow: 1,
-              slidesToScroll: 1,
-              centerMode: true,
+            {
+              breakpoint: 500,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                centerMode: true,
+              },
             },
-          },
-        ],
+          ],
+        });
+      }
+
+      // Verifica el ancho de la pantalla y destruye o monta el carousel según sea necesario
+      function checkWindowSize() {
+        if ($(window).width() >= 1280) {
+          destroySlick();
+        } else {
+          initSlick();
+        }
+      }
+
+      // Llama a la función checkWindowSize al cargar la página y cuando cambia el tamaño de la ventana
+      $(document).ready(function () {
+        checkWindowSize();
+      });
+
+      $(window).resize(function () {
+        checkWindowSize();
       });
     </script>
 
